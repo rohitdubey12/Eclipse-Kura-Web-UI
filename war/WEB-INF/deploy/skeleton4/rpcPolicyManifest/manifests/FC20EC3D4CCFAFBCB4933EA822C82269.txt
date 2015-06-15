@@ -1,0 +1,2 @@
+serviceClass: org.eclipse.kura.skeleton4.client.GreetingService
+path: 72507A409B10F79F6BD6AFA69DF972E7.gwt.rpc

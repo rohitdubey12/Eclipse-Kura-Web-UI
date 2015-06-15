@@ -1,5 +1,7 @@
 package org.eclipse.kura.skeleton4.client;
 
+import org.eclipse.kura.skeleton4.client.ui.Skeleton4Ui;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.ui.RootPanel;
