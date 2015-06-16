@@ -37,23 +37,19 @@ public class Skeleton4Ui extends Composite {
 
 					@Override
 					public void onFailure(Throwable caught) {
-						System.out.println("FAILED");
 						DialogBox box = new DialogBox();
 						box.add(new Label("FAILURE"));
-
 					}
 
 					@Override
 					public void onSuccess(
 							ArrayList<SystemPropertiesModel> result) {
 						for (SystemPropertiesModel sysProp : result) {
-							if (sysProp.getName() == "KuraVersion") {
+							if (sysProp.getName().contains("KuraVersion")) {
 								footerRight.setText(sysProp.getValue());
 							}
 						}
-
 					}
-
 				});
 
 	}

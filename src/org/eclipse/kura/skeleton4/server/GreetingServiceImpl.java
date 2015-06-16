@@ -18,21 +18,12 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 
 	@Override
 	public ArrayList<SystemPropertiesModel> greetServer() {
-		addKuraVersion(sysProp);
+		sysProp.clear();
+
+		sysProp.add(new SystemPropertiesModel("1", "KuraVersion", "2.3"));
+
 		// TODO add other System Properties here
 
 		return sysProp;
-	}
-
-	public void addKuraVersion(ArrayList<SystemPropertiesModel> sysProp) {
-		// TODO replace with logic to fetch version
-		String version = "2.3";
-
-		SystemPropertiesModel prop = new SystemPropertiesModel();
-		prop.setId("1");
-		prop.setName("KuraVersion");
-		prop.setValue(version);
-
-		sysProp.add(prop);
 	}
 }

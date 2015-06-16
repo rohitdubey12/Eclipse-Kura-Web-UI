@@ -11,6 +11,13 @@ public class SystemPropertiesModel implements IsSerializable {
 	public SystemPropertiesModel() {
 	}
 
+	public SystemPropertiesModel(String id, String name, String value) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.value = value;
+	}
+
 	public String getId() {
 		return id;
 	}
