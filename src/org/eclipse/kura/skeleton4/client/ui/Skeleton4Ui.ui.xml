@@ -25,14 +25,13 @@
 		
 	.ui-padding {
 		margin-right:		30px;
-		margin-top: 		10px;
+		margin-top: 		0px;
 		}
 		
 		
 	.footer {
 		margin-top:			10px;
 		margin-right:		30px;	
-		position:			fixed;
 		bottom:				0px;
 
 		}
@@ -64,9 +63,16 @@
 									<b:Panel>
 										<b:PanelHeader>
 											<b:Heading size="H3" text="System"/>	
-										</b:PanelHeader>
-										<b:PanelBody>
-											<b.html:Strong text="Available system choices"/>
+										</b:PanelHeader>		
+										<b:PanelBody ui:field='systemPanel'>
+											<b:NavPills stacked="true">
+												<b:AnchorListItem text="Status" ui:field="status"/>
+												<b:AnchorListItem text="Device" ui:field="device"/>
+												<b:AnchorListItem text="Network" ui:field="network"/>
+												<b:AnchorListItem text="Firewall" ui:field="firewall"/>
+												<b:AnchorListItem text="Packages" ui:field="packages"/>
+												<b:AnchorListItem text="Setting" ui:field="setting"/>											
+											</b:NavPills>
 										</b:PanelBody>
 									</b:Panel>
 									
@@ -79,7 +85,16 @@
 											<b:Heading size="H3" text="Services"/>	
 										</b:PanelHeader>
 										<b:PanelBody>
-											<b.html:Strong text="Available Services"/>
+											<b:NavPills stacked="true">
+												<b:AnchorListItem text="ClockService" ui:field="clockService" />
+												<b:AnchorListItem text="CloudService" ui:field="cloudService"/>
+												<b:AnchorListItem text="CommandService" ui:field="commandService"/>
+												<b:AnchorListItem text="WebConsole" ui:field="webConsole"/>
+												<b:AnchorListItem text="DataService" ui:field="dataService"/>
+												<b:AnchorListItem text="MqttDataTransport" ui:field="mqttDataTransport"/>
+												<b:AnchorListItem text="SslManagerService" ui:field="sslManagerService"/>
+												<b:AnchorListItem text="WatchdogService" ui:field="watchdogService"/>											
+											</b:NavPills>											
 										</b:PanelBody>
 									</b:Panel>
 									

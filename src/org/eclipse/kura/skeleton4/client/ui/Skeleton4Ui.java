@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.eclipse.kura.skeleton4.client.GreetingService;
 import org.eclipse.kura.skeleton4.client.GreetingServiceAsync;
 import org.eclipse.kura.skeleton4.shared.model.SystemPropertiesModel;
+import org.gwtbootstrap3.client.ui.AnchorListItem;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -19,6 +20,10 @@ public class Skeleton4Ui extends Composite {
 
 	@UiField
 	Label footerRight;
+	@UiField
+	AnchorListItem status, device, network, firewall, packages, setting,
+			clockService, cloudService, commandService, webConsole,
+			dataService, mqttDataTransport, sslManagerService, watchdogService;
 
 	private final GreetingServiceAsync greetingService = GWT
 			.create(GreetingService.class);
