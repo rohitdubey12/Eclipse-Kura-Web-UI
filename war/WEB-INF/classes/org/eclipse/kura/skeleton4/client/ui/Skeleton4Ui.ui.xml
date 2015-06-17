@@ -23,6 +23,7 @@
 	}
 	
 	.center-panel {
+		height: 632px;
 	}
 	
 	.top-row-padding {
@@ -109,12 +110,12 @@
 
 							<b:Column size="MD_9">
 
-								<b:Panel addStyleNames="{style.center-panel}" >
+								<b:Panel  >
 									<b:PanelHeader>
 										<b:Heading size="H3" text="**dynamically generated??**" />
 									</b:PanelHeader>
-									<b:PanelBody>
-										<b:Well>
+									<b:PanelBody >
+										<b:Well addStyleNames="{style.center-panel}">
 											<b.html:Strong text="Content here" />
 										</b:Well>
 									</b:PanelBody>
