@@ -77,7 +77,7 @@
 											<b:AnchorListItem text="Network" ui:field="network" />
 											<b:AnchorListItem text="Firewall" ui:field="firewall" />
 											<b:AnchorListItem text="Packages" ui:field="packages" />
-											<b:AnchorListItem text="Setting" ui:field="setting" />
+											<b:AnchorListItem icon="GEAR" iconFixedWidth="true" iconSpin="true" text="Setting" ui:field="setting" />
 										</b:NavPills>
 									</b:PanelBody>
 								</b:Panel>
