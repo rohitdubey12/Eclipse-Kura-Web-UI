@@ -1,0 +1,11 @@
+org/eclipse/kura/skeleton4/client/Skeleton4.class
+org/eclipse/kura/skeleton4/shared/FieldVerifier.class
+org/eclipse/kura/skeleton4/client/GreetingServiceAsync.class
+org/eclipse/kura/skeleton4/client/GreetingService.class
+org/eclipse/kura/skeleton4/client/ui/Skeleton4Ui.class
+org/eclipse/kura/skeleton4/shared/model/BaseModel.class
+org/eclipse/kura/skeleton4/server/GreetingServiceImpl.class
+org/eclipse/kura/skeleton4/shared/model/GwtGroupedNVPair.class
+org/eclipse/kura/skeleton4/client/ui/Skeleton4Ui$Skeleton4UIUiBinder.class
+org/eclipse/kura/skeleton4/client/ui/Skeleton4Ui$1.class
+org/eclipse/kura/skeleton4/shared/model/SystemPropertiesModel.class
