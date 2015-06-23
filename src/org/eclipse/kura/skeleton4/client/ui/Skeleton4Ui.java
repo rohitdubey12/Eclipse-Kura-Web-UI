@@ -6,6 +6,7 @@ import org.eclipse.kura.skeleton4.client.GreetingService;
 import org.eclipse.kura.skeleton4.client.GreetingServiceAsync;
 import org.eclipse.kura.skeleton4.shared.model.SystemPropertiesModel;
 import org.gwtbootstrap3.client.ui.AnchorListItem;
+import org.gwtbootstrap3.client.ui.Image;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -18,6 +19,8 @@ import com.google.gwt.user.client.ui.Widget;
 
 public class Skeleton4Ui extends Composite {
 
+	@UiField
+	Image header;
 	@UiField
 	Label footerRight;
 	@UiField
@@ -36,6 +39,11 @@ public class Skeleton4Ui extends Composite {
 
 	public Skeleton4Ui() {
 		initWidget(uiBinder.createAndBindUi(this));
+
+		// TODO : ADD IE specific code if needed
+		// System.out.println("USER AGENT: " + Navigator.getUserAgent());
+		header.addStyleName("header-logo");
+		header.setUrl("images/kura_logo_small.png");
 
 		greetingService
 				.greetServer(new AsyncCallback<ArrayList<SystemPropertiesModel>>() {

@@ -43,112 +43,110 @@
 	</ui:style>
 
 
-	<b:Container fluid="true">
-		<b:Column addStyleNames= "{style.outer-column}" size="XS_12" >
+	<b:Column addStyleNames="{style.outer-column}" size="XS_12">
 
-			<!-- ROW#1 - Header logo -->
+		<!-- ROW#1 - Header logo -->
+		<b:Row>
 			<b:Row>
-				<b:Row>
-					<b:Column addStyleNames="{style.top-row-padding}" size="XS_12">
-						<b:Panel>
-							<b:PanelBody>
-								<b:Image addStyleNames="{style.image}" url="images/kura_logo_small.png" />
-							</b:PanelBody>
-						</b:Panel>
-					</b:Column>
-				</b:Row>
-			</b:Row>
-
-
-			<!-- ROW#2 content -->
-			<b:Row>
-				<b:Panel>
-					<b:PanelBody>
-						<b:Row>
-							<b:Column size="MD_3">
-								<b:Panel>
-									<b:PanelHeader>
-										<b:Heading size="H3" text="System" />
-									</b:PanelHeader>
-									<b:PanelBody ui:field='systemPanel'>
-										<b:NavPills stacked="true">
-											<b:AnchorListItem text="Status" ui:field="status" />
-											<b:AnchorListItem text="Device" ui:field="device" />
-											<b:AnchorListItem text="Network" ui:field="network" />
-											<b:AnchorListItem text="Firewall" ui:field="firewall" />
-											<b:AnchorListItem text="Packages" ui:field="packages" />
-											<b:AnchorListItem icon="GEAR" iconFixedWidth="true" iconSpin="true" text="Setting" ui:field="setting" />
-										</b:NavPills>
-									</b:PanelBody>
-								</b:Panel>
-								<b:Panel>
-									<b:PanelHeader>
-										<b:Heading size="H3" text="Services" />
-									</b:PanelHeader>
-									<b:PanelBody>
-										<b:NavPills stacked="true">
-											<b:AnchorListItem text="ClockService"
-												ui:field="clockService" />
-											<b:AnchorListItem text="CloudService"
-												ui:field="cloudService" />
-											<b:AnchorListItem text="CommandService"
-												ui:field="commandService" />
-											<b:AnchorListItem text="WebConsole"
-												ui:field="webConsole" />
-											<b:AnchorListItem text="DataService"
-												ui:field="dataService" />
-											<b:AnchorListItem text="MqttDataTransport"
-												ui:field="mqttDataTransport" />
-											<b:AnchorListItem text="SslManagerService"
-												ui:field="sslManagerService" />
-											<b:AnchorListItem text="WatchdogService"
-												ui:field="watchdogService" />
-										</b:NavPills>
-									</b:PanelBody>
-								</b:Panel>
-							</b:Column>
-
-							<b:Column size="MD_9">
-
-								<b:Panel  >
-									<b:PanelHeader>
-										<b:Heading size="H3" text="**dynamically generated??**" />
-									</b:PanelHeader>
-									<b:PanelBody >
-										<b:Well addStyleNames="{style.center-panel}">
-											<b.html:Strong text="Content here" />
-										</b:Well>
-									</b:PanelBody>
-								</b:Panel>
-
-							</b:Column>
-						</b:Row>
-					</b:PanelBody>
-				</b:Panel>
-			</b:Row>
-			<!-- ROW3 (Footer) Content -->
-			<b:Row>
-				<b:Column addStyleNames="{style.bottom-row-padding}" size="MD_12">
-					<b:Row>
-						<b:Panel>
-							<b:PanelFooter>
-								<b:Row>
-									<b:Column size="MD_8">
-										<b.html:Paragraph alignment="LEFT">
-											<g:Label ui:field='footerLeft' text="Footer Left" />
-										</b.html:Paragraph>
-									</b:Column>
-									<b:Column size="MD_4">
-										<b.html:Paragraph alignment="RIGHT">
-											<g:Label ui:field='footerRight' text="Footer Right" />
-										</b.html:Paragraph>
-									</b:Column>
-								</b:Row>
-							</b:PanelFooter>
-						</b:Panel>
-					</b:Row>
+				<b:Column addStyleNames="{style.top-row-padding}" size="XS_12">
+					<b:Panel>
+						<b:PanelBody>
+							<b:Image ui:field="header"/>
+						</b:PanelBody>
+					</b:Panel>
 				</b:Column>
 			</b:Row>
-		</b:Column>
-	</b:Container>
+		</b:Row>
+
+
+		<!-- ROW#2 content -->
+		<b:Row>
+			<b:Panel>
+				<b:PanelBody>
+					<b:Row>
+						<b:Column size="MD_3">
+							<b:Panel>
+								<b:PanelHeader>
+									<b:Heading size="H3" text="System" />
+								</b:PanelHeader>
+								<b:PanelBody ui:field='systemPanel'>
+									<b:NavPills stacked="true">
+										<b:AnchorListItem text="Status" ui:field="status" />
+										<b:AnchorListItem text="Device" ui:field="device" />
+										<b:AnchorListItem text="Network" ui:field="network" />
+										<b:AnchorListItem text="Firewall" ui:field="firewall" />
+										<b:AnchorListItem text="Packages" ui:field="packages" />
+										<b:AnchorListItem icon="GEAR" iconFixedWidth="true"
+											iconSpin="true" text="Setting" ui:field="setting" />
+									</b:NavPills>
+								</b:PanelBody>
+							</b:Panel>
+							<b:Panel>
+								<b:PanelHeader>
+									<b:Heading size="H3" text="Services" />
+								</b:PanelHeader>
+								<b:PanelBody>
+									<b:NavPills stacked="true">
+										<b:AnchorListItem text="ClockService"
+											ui:field="clockService" />
+										<b:AnchorListItem text="CloudService"
+											ui:field="cloudService" />
+										<b:AnchorListItem text="CommandService"
+											ui:field="commandService" />
+										<b:AnchorListItem text="WebConsole" ui:field="webConsole" />
+										<b:AnchorListItem text="DataService"
+											ui:field="dataService" />
+										<b:AnchorListItem text="MqttDataTransport"
+											ui:field="mqttDataTransport" />
+										<b:AnchorListItem text="SslManagerService"
+											ui:field="sslManagerService" />
+										<b:AnchorListItem text="WatchdogService"
+											ui:field="watchdogService" />
+									</b:NavPills>
+								</b:PanelBody>
+							</b:Panel>
+						</b:Column>
+
+						<b:Column size="MD_9">
+
+							<b:Panel>
+								<b:PanelHeader>
+									<b:Heading size="H3" text="**dynamically generated??**" />
+								</b:PanelHeader>
+								<b:PanelBody>
+									<b:Well addStyleNames="{style.center-panel}">
+										<b.html:Strong text="Content here" />
+									</b:Well>
+								</b:PanelBody>
+							</b:Panel>
+
+						</b:Column>
+					</b:Row>
+				</b:PanelBody>
+			</b:Panel>
+		</b:Row>
+		<!-- ROW3 (Footer) Content -->
+		<b:Row>
+			<b:Column addStyleNames="{style.bottom-row-padding}" size="MD_12">
+				<b:Row>
+					<b:Panel>
+						<b:PanelFooter>
+							<b:Row>
+								<b:Column size="MD_8">
+									<b.html:Paragraph alignment="LEFT">
+										<g:Label ui:field='footerLeft' text="Footer Left" />
+									</b.html:Paragraph>
+								</b:Column>
+								<b:Column size="MD_4">
+									<b.html:Paragraph alignment="RIGHT">
+										<g:Label ui:field='footerRight' text="Footer Right" />
+									</b.html:Paragraph>
+								</b:Column>
+							</b:Row>
+						</b:PanelFooter>
+					</b:Panel>
+				</b:Row>
+			</b:Column>
+		</b:Row>
+	</b:Column>
 </ui:UiBinder> 
