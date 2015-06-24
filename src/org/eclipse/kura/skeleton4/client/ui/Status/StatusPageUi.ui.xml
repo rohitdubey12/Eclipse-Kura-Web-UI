@@ -9,7 +9,7 @@
 	}
 	
 	.center-panel {
-		height: 632px;
+		height: 572px;
 	}
 	</ui:style>
 	<b:Container fluid="true">

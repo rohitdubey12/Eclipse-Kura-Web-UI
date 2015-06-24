@@ -64,14 +64,14 @@
 				<b:Panel>
 					<b:PanelBody>
 						<b:Row>
-							<b:Column size="MD_3">
+							<b:Column size="MD_3" >
 								<b:Panel>
 									<b:PanelHeader>
 										<b:Heading size="H3" text="System" />
 									</b:PanelHeader>
 									<b:PanelBody ui:field='systemPanel'>
 										<b:NavPills stacked="true">
-											<b:AnchorListItem text="Status" icon="EXCLAMATION" iconFixedWidth="true" ui:field="status" />
+											<b:AnchorListItem text="Status" icon="CHECK_CIRCLE" iconFixedWidth="true" ui:field="status" />
 											
 											<b:AnchorListItem text="Device" icon="LAPTOP" iconFixedWidth="true" ui:field="device" />
 											
@@ -79,9 +79,9 @@
 											
 											<b:AnchorListItem text="Firewall" icon="FIRE" iconFixedWidth="true" ui:field="firewall" />
 
-											<b:AnchorListItem icon="CUBES" iconFixedWidth="true" text="Packages" ui:field="packages" />
+											<b:AnchorListItem text="Packages" icon="CUBES" iconFixedWidth="true" ui:field="packages" />
 
-											<b:AnchorListItem icon="GEAR" iconFixedWidth="true" text="Setting" ui:field="setting" />
+											<b:AnchorListItem text="Settings" icon="GEAR" iconFixedWidth="true" ui:field="setting" />
 										</b:NavPills>
 									</b:PanelBody>
 								</b:Panel>
