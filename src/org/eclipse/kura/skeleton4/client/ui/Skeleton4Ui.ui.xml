@@ -59,33 +59,40 @@
 			</b:Row>
 
 
-			<!-- ROW#2 content -->
-			<b:Row>
+			<!-- ROW#2 content Medium and Large Screens -->
+			<b:Row visibleOn="MD_LG">
 				<b:Panel>
 					<b:PanelBody>
 						<b:Row>
-							<b:Column size="MD_3" >
-								<b:Panel>
+							<b:Column size="MD_3">
+								<b:Panel visibleOn="MD_LG">
 									<b:PanelHeader>
 										<b:Heading size="H3" text="System" />
 									</b:PanelHeader>
 									<b:PanelBody ui:field='systemPanel'>
-										<b:NavPills stacked="true">
-											<b:AnchorListItem text="Status" icon="CHECK_CIRCLE" iconFixedWidth="true" ui:field="status" />
-											
-											<b:AnchorListItem text="Device" icon="LAPTOP" iconFixedWidth="true" ui:field="device" />
-											
-											<b:AnchorListItem text="Network" icon="WIFI" iconFixedWidth="true" ui:field="network" />
-											
-											<b:AnchorListItem text="Firewall" icon="FIRE" iconFixedWidth="true" ui:field="firewall" />
+										<b:NavPills stacked="true" visibleOn="MD_LG">
+											<b:AnchorListItem text="Status" icon="CHECK_CIRCLE"
+												iconFixedWidth="true" ui:field="status" />
 
-											<b:AnchorListItem text="Packages" icon="CUBES" iconFixedWidth="true" ui:field="packages" />
+											<b:AnchorListItem text="Device" icon="LAPTOP"
+												iconFixedWidth="true" ui:field="device" />
 
-											<b:AnchorListItem text="Settings" icon="GEAR" iconFixedWidth="true" ui:field="setting" />
+											<b:AnchorListItem text="Network" icon="WIFI"
+												iconFixedWidth="true" ui:field="network" />
+
+											<b:AnchorListItem text="Firewall" icon="FIRE"
+												iconFixedWidth="true" ui:field="firewall" />
+
+											<b:AnchorListItem text="Packages" icon="CUBES"
+												iconFixedWidth="true" ui:field="packages" />
+
+											<b:AnchorListItem text="Settings" icon="GEAR"
+												iconFixedWidth="true" ui:field="setting" />
 										</b:NavPills>
 									</b:PanelBody>
 								</b:Panel>
-								<b:Panel>
+
+								<b:Panel visibleOn="MD_LG">
 									<b:PanelHeader>
 										<b:Heading size="H3" text="Services" />
 									</b:PanelHeader>
@@ -128,6 +135,58 @@
 					</b:PanelBody>
 				</b:Panel>
 			</b:Row>
+
+
+			<!-- Row2 for small Displays -->
+			<b:Row visibleOn="XS_SM">
+				<b:Panel>
+					<b:PanelBody>
+						<b:Row>
+							<b:Column size="SM_12">
+								<b:NavPills>
+									<b:ListDropDown>
+										<b:AnchorButton dataToggle="DROPDOWN">System</b:AnchorButton>
+										<b:DropDownMenu>
+											<b:AnchorListItem text="Status" />
+											<b:AnchorListItem text="Device" />
+											<b:AnchorListItem text="Network" />
+											<b:AnchorListItem text="Firewall" />
+											<b:AnchorListItem text="Packages" />
+											<b:AnchorListItem text="Settings" />
+										</b:DropDownMenu>
+									</b:ListDropDown>
+
+									<b:ListDropDown pull="RIGHT">
+										<b:AnchorButton dataToggle="DROPDOWN">Services</b:AnchorButton>
+										<b:DropDownMenu >
+											<b:AnchorListItem pull="RIGHT" text="ClockService" />
+											<b:AnchorListItem pull="RIGHT" text="CloudService" />
+											<b:AnchorListItem pull="RIGHT" text="CommandService" />
+											<b:AnchorListItem pull="RIGHT" text="WebConsole" />
+											<b:AnchorListItem pull="RIGHT" text="DataService" />
+											<b:AnchorListItem pull="RIGHT" text="MqttDataTransport" />
+											<b:AnchorListItem pull="RIGHT" text="SslManagerService" />
+											<b:AnchorListItem pull="RIGHT" text="WatchdogService" />
+										</b:DropDownMenu>
+									</b:ListDropDown>
+								</b:NavPills>
+							</b:Column>
+						</b:Row>
+						<b:Row>
+							<b:Column size="SM_12">
+								<b:Panel>
+									<b:PanelBody>
+										<b:Well></b:Well>
+									</b:PanelBody>
+								</b:Panel>
+							</b:Column>
+						</b:Row>
+					</b:PanelBody>
+				</b:Panel>
+			</b:Row>
+
+
+
 			<!-- ROW3 (Footer) Content -->
 			<b:Row>
 				<b:Column addStyleNames="{style.bottom-row-padding}" size="MD_12">
